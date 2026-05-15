@@ -20,21 +20,6 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "121 Design / Lab / Notification Center",
   description: "",
-  openGraph: {
-    images: [
-      {
-        url: 'https://comforting-palmier-7d8f71.netlify.app/og.jpg',
-        width: 1200,
-        height: 630,
-      },
-    ],
-    type: 'website',
-    locale: 'en_US',
-    url: '',
-    siteName: '121 Design / Lab / Notification Cente',
-    title: '121 Design / Lab / Notification Cente',
-    description: '',
-  },
   robots:{
     index: false,
     follow: false
