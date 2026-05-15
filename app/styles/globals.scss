@@ -1,0 +1,100 @@
+:root{
+    font-family: 'Geist', sans-serif;
+}
+
+nav{
+    a.nav-link{
+        position: relative;
+        transition: color .3s ease-in-out;
+        &::after{
+            content: "";
+            display: block;
+            width: 100%;
+            height: 1px;
+            position: absolute;
+            bottom: -3px;
+            background-color: var(--mainBlue);
+            z-index: -1;
+            transition: height .3s ease-in-out;
+        }
+        &:hover{
+            color: var(--white);
+            &::after{
+                height: calc(100% + 4px);
+
+            }
+        }
+    }
+}
+
+h1{
+    span.inner-image{
+        path{
+            transition: all .4s ease-in-out;
+        }
+        .path-left{
+            opacity: 0;
+            transform: translateY(-100%);
+        }
+        .path-right{
+            opacity: 0;
+            transform: translateY(100%);
+        }
+    }
+    &:hover{
+        span.inner-image{
+            .path-left{
+                opacity: 1;
+                transform: translateY(0%);
+            }
+            .path-right{
+                opacity: 1;
+                transform: translateY(0%);
+            }
+        }
+    }
+}
+
+.button{
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 100%;
+    padding: 8px 12px 9px;
+    background-color: var(--mainBlue);
+    color: var(--tertiaryBlue);
+    border: 1px solid var(--mainBlue);
+    border-radius: 4px;
+    transition: all .4s ease-in-out;
+    &:hover{
+        background-color: var(--white);
+        color: var(--mainBlue);
+        border-color: var(--mainBlue);
+    }
+    &.secondary{
+        background-color: var(--tertiaryBlue);
+        border-color: var(--tertiaryBlue);
+        color: var(--mainBlue);
+        &:hover{
+            background-color: var(--mainBlue);
+            color: var(--tertiaryBlue);
+            border-color: var(--tertiaryBlue);
+        }
+    }
+    &.tertiary{
+        border-color: var(--tertiaryBlue);
+        &:hover{
+            color: var(--mainBlue);
+            background-color: var(--secondaryBlue);
+            border-color: var(--secondaryBlue);
+        }
+    }
+}
+
+.pixel{
+    // background-color: red;
+    background-image: url("/path-pixel.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
