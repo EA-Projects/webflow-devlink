@@ -18,8 +18,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Bluehue — A Creative Research Lab Exploring New Ideas from New York",
-  description: "A Creative Research Lab Exploring New Ideas from New York",
+  title: "121 Design / Lab / Notification Center",
+  description: "",
   openGraph: {
     images: [
       {
@@ -30,10 +30,10 @@ export const metadata: Metadata = {
     ],
     type: 'website',
     locale: 'en_US',
-    url: 'https://joelbidal.com.ar/bluehue',
-    siteName: 'Bluehue',
-    title: 'Bluehue — A Creative Research Lab Exploring New Ideas from New York',
-    description: 'A Creative Research Lab Exploring New Ideas from New York',
+    url: '',
+    siteName: '121 Design / Lab / Notification Cente',
+    title: '121 Design / Lab / Notification Cente',
+    description: '',
   },
   robots:{
     index: false,
